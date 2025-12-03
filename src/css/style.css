@@ -1,0 +1,27 @@
+/* 1. Les librairies externes */
+@import "vendors/normalize.css";
+
+/* 2. Les utilitaires */
+@import "utils/variables.css";
+
+/* 3. Les règles générales */
+@import "base/main.css";
+
+/* 4. Les éléments de mise en page généraux */
+@import "layout/body.css";
+@import "layout/header.css";
+@import "layout/footer.css";
+@import "layout/section.css";
+
+/* 5. Les librairies tierces */
+@import "lib/slick.css";
+@import "lib/slick-theme.css";
+
+/* 6. Les composants */
+@import "components/menu.css";
+@import "components/select.css";
+@import "components/myBtn.css";
+@import "components/filtre.css";
+@import "components/carousel.css";
+@import "components/catalogue.css";
+

@@ -1,0 +1,7 @@
+.body {
+    background: var(--gray-800);
+}
+
+.body--home {
+    background: var(--white);
+}

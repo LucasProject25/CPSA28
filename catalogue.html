@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Véhicules - CPSA28</title>
+    <link rel="shortcut icon" href="assets/icon/CPSA-icon-alt.svg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="src/css/style.css" />
+
+</head>
+
+<body class="body">
+    <header class="header">
+        <nav class="header__menu menu" id="mainNav" aria-hidden="true">
+            <a href="/" class="menu__logoLink">
+                <img class="menu__logo" src="assets/logo/CPSA-clr.svg" alt="Logo">
+            </a>
+            <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                <i class="bi bi-list"></i>
+            </a>
+            <ul class="list-unstyled menu__list">
+                <li class="menu__item"><a class="menu__link" href="">Véhicules</a></li>
+                <li class="menu__item"><a class="menu__link" href="">Services</a></li>
+                <li class="menu__item"><a class="menu__link" href="">Contact</a></li>
+            </ul>
+            <div>
+                <ul class="list-unstyled menu__social" aria-label="Social media">
+                    <li>
+                        <a class="menu__iconLink" href=""><img src="assets/icon/Facebook-wh.svg"
+                                alt="Icon Facebook"></a>
+                    </li>
+                    <li>
+                        <a class="menu__iconLink" href=""><img src="assets/icon/Instagram-wh.svg"
+                                alt="Icon Instagram"></a>
+                    </li>
+                    <li>
+                        <a class="menu__iconLink" href=""><img src="assets/icon/profile-wh.svg" alt="Icon Contact"></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="section section--catalogue">
+            <header class="section__header">
+                <h2 class="section__title">Nos véhicules</h2>
+            </header>
+            <ul class="container list-unstyled filtre">
+                <div class="filtre__itemsLogo">
+                    <li class="filtre__item"><a class="filtre__link" href=""></a>
+                        <img class="filtre__logo" src="assets/logo/porsche-logo.png" alt="Logo Porsche">
+                    </li>
+                    <li class="filtre__item"><a class="filtre__link" href=""></a>
+                        <img class="filtre__logo" src="assets/logo/scuderia_ferrari-logo.png" alt="Logo Ferrari">
+                    </li>
+                    <li class="filtre__item"><a class="filtre__link" href=""></a>
+                        <img class="filtre__logo" src="assets/logo/lamborghini-logo.png" alt="Logo Lamborghini">
+                    </li>
+                    <li class="filtre__item"><a class="filtre__link" href=""></a>
+                        <img class="filtre__logo" src="assets/logo/aston_martin-logo.png" alt="Logo Aston Martin">
+                    </li>
+                    <li class="filtre__item"><a class="filtre__link" href=""></a>
+                        <img class="filtre__logo" src="assets/logo/bentley-logo.png" alt="Logo Bentley">
+                    </li>
+                </div>
+                <li class="filtre__item filtre__item--autre"><a class="filtre__link" href=""></a>
+                    <img class="filtre__logo" src="assets/logo/autre-logo.png" alt="Logo autres marques">
+                    <p class="filtre__text">Autres modèles</p>
+                </li>
+            </ul>
+            <ul class="container list-unstyled filtre filtre--mobile">
+                <div class="filtre__itemsLogo filtre__itemsLogo--firstLine">
+                    <li class="filtre__item"><a class="filtre__link" href=""></a>
+                        <img class="filtre__logo" src="assets/logo/porsche-logo.png" alt="Logo Porsche">
+                    </li>
+                    <li class="filtre__item"><a class="filtre__link" href=""></a>
+                        <img class="filtre__logo" src="assets/logo/scuderia_ferrari-logo.png" alt="Logo Ferrari">
+                    </li>
+                    <li class="filtre__item"><a class="filtre__link" href=""></a>
+                        <img class="filtre__logo" src="assets/logo/lamborghini-logo.png" alt="Logo Lamborghini">
+                    </li>
+                </div>
+                <div class="filtre__itemsLogo filtre__itemsLogo--secondLine">
+                    <li class="filtre__item"><a class="filtre__link" href=""></a>
+                        <img class="filtre__logo" src="assets/logo/aston_martin-logo.png" alt="Logo Aston Martin">
+                    </li>
+                    <li class="filtre__item"><a class="filtre__link" href=""></a>
+                        <img class="filtre__logo" src="assets/logo/bentley-logo.png" alt="Logo Bentley">
+                    </li>
+                    <li class="filtre__item filtre__item--autre"><a class="filtre__link" href=""></a>
+                        <img class="filtre__logo" src="assets/logo/autre-logo.png" alt="Logo autres marques">
+                    </li>
+                </div>
+            </ul>
+        </section>
+        <section class="section section--list">
+            <ul class="container list-unstyled catalogue">
+                <div class="catalogue__itemsCar">
+                    <li class="catalogue__item">
+                        <img class="catalogue__img" src="assets/img/Porsche_Cayman.png" alt="Porsche Cayman">
+                        <div class="catalogue__details">
+                            <img class="catalogue__logo" src="assets/logo/porsche-logo.png" alt="Logo Porsche">
+                            <h2 class="catalogue__title">Cayman 2 Type 981 GT4</h2>
+                            <div class="catalogue__informations">
+                                <div class="catalogue__info">
+                                    <p class="catalogue__firstInfo">Catégorie</p>
+                                    <p class="catalogue__secondInfo">Coupé</p>
+                                </div>
+                                <div class="catalogue__info">
+                                    <p class="catalogue__firstInfo">Énergie</p>
+                                    <p class="catalogue__secondInfo">Essence</p>
+                                </div>
+                                <div class="catalogue__info">
+                                    <p class="catalogue__firstInfo">Transmission</p>
+                                    <p class="catalogue__secondInfo">Manuelle</p>
+                                </div>
+                                <div class="catalogue__info">
+                                    <p class="catalogue__firstInfo">Kilométrage</p>
+                                    <p class="catalogue__secondInfo">24 660km</p>
+                                </div>
+                                <div class="catalogue__info">
+                                    <p class="catalogue__firstInfo">Année</p>
+                                    <p class="catalogue__secondInfo">2015</p>
+                                </div>
+                            </div>
+                            <div class="catalogue__more">
+                                <h2 class="catalogue__price">94 990€</h2>
+                                <a class="catalogue__link" href="vehicule.html">En savoir plus</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="catalogue__item catalogue__item--reverse">
+                        <img class="catalogue__img" src="assets/img/Ferrari_FF.png" alt="Ferrari FF">
+                        <div class="catalogue__details">
+                            <img class="catalogue__logo" src="assets/logo/scuderia_ferrari-logo.png" alt="Logo Ferrari">
+                            <h2 class="catalogue__title">FF v12 4rm 660cv</h2>
+                            <div class="catalogue__informations">
+                                <div class="catalogue__info">
+                                    <p class="catalogue__firstInfo">Catégorie</p>
+                                    <p class="catalogue__secondInfo">Coupé</p>
+                                </div>
+                                <div class="catalogue__info">
+                                    <p class="catalogue__firstInfo">Énergie</p>
+                                    <p class="catalogue__secondInfo">Essence</p>
+                                </div>
+                                <div class="catalogue__info">
+                                    <p class="catalogue__firstInfo">Transmission</p>
+                                    <p class="catalogue__secondInfo">Automatique</p>
+                                </div>
+                                <div class="catalogue__info">
+                                    <p class="catalogue__firstInfo">Kilométrage</p>
+                                    <p class="catalogue__secondInfo">72 836km</p>
+                                </div>
+                                <div class="catalogue__info">
+                                    <p class="catalogue__firstInfo">Année</p>
+                                    <p class="catalogue__secondInfo">2011</p>
+                                </div>
+                            </div>
+                            <div class="catalogue__more">
+                                <h2 class="catalogue__price">136 990€</h2>
+                                <a class="catalogue__link" href="">En savoir plus</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="catalogue__item">
+                        <img class="catalogue__img" src="assets/img/Aston_Martin_Vantage.png" alt="Aston Martin Vantage">
+                        <div class="catalogue__details">
+                            <img class="catalogue__logo" src="assets/logo/aston_martin-logo.png" alt="Logo Aston Martin">
+                            <h2 class="catalogue__title">Vantage</h2>
+                            <div class="catalogue__informations">
+                                <div class="catalogue__info">
+                                    <p class="catalogue__firstInfo">Catégorie</p>
+                                    <p class="catalogue__secondInfo">Coupé</p>
+                                </div>
+                                <div class="catalogue__info">
+                                    <p class="catalogue__firstInfo">Énergie</p>
+                                    <p class="catalogue__secondInfo">Essence</p>
+                                </div>
+                                <div class="catalogue__info">
+                                    <p class="catalogue__firstInfo">Transmission</p>
+                                    <p class="catalogue__secondInfo">Manuelle</p>
+                                </div>
+                                <div class="catalogue__info">
+                                    <p class="catalogue__firstInfo">Kilométrage</p>
+                                    <p class="catalogue__secondInfo">71 600km</p>
+                                </div>
+                                <div class="catalogue__info">
+                                    <p class="catalogue__firstInfo">Année</p>
+                                    <p class="catalogue__secondInfo">2007</p>
+                                </div>
+                            </div>
+                            <div class="catalogue__more">
+                                <h2 class="catalogue__price">62 990€</h2>
+                                <a class="catalogue__link" href="">En savoir plus</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="catalogue__item catalogue__item--reverse">
+                        <img class="catalogue__img" src="assets/img/Mercedes_AMG.png" alt="Mercedes AMG">
+                        <div class="catalogue__details">
+                            <img class="catalogue__logo" src="assets/logo/Mercedes-Logo.png" alt="Logo Mercedes">
+                            <h2 class="catalogue__title">AMG GT</h2>
+                            <div class="catalogue__informations">
+                                <div class="catalogue__info">
+                                    <p class="catalogue__firstInfo">Catégorie</p>
+                                    <p class="catalogue__secondInfo">Cabriolet</p>
+                                </div>
+                                <div class="catalogue__info">
+                                    <p class="catalogue__firstInfo">Énergie</p>
+                                    <p class="catalogue__secondInfo">Essence</p>
+                                </div>
+                                <div class="catalogue__info">
+                                    <p class="catalogue__firstInfo">Transmission</p>
+                                    <p class="catalogue__secondInfo">Automatique</p>
+                                </div>
+                                <div class="catalogue__info">
+                                    <p class="catalogue__firstInfo">Kilométrage</p>
+                                    <p class="catalogue__secondInfo">50 179km</p>
+                                </div>
+                                <div class="catalogue__info">
+                                    <p class="catalogue__firstInfo">Année</p>
+                                    <p class="catalogue__secondInfo">2017</p>
+                                </div>
+                            </div>
+                            <div class="catalogue__more">
+                                <h2 class="catalogue__price">119 990€</h2>
+                                <a class="catalogue__link" href="">En savoir plus</a>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+            </ul>
+            <div class="section__btns section__btns--catalogue">
+                <a class="myBtn myBtn--page" href="">Page précédente</a>
+                <a class="myBtn myBtn--page__number" href="">1</a>
+                <a class="myBtn myBtn--page__number" href="">2</a>
+                <a class="myBtn myBtn--page" href="">Page suivante</a>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer__content">
+            <div class="footer__details">
+                <div class="footer__coordonnees">
+                    <h2 class="footer__title">Coordonnées</h2>
+                    <p class="footer__text">16 rue du val de l’Eure - ZA Euroval</p>
+                    <p class="footer__text">28630 Fontenay-sur-Eure</p>
+                    <p class="footer__text">cpsa28@wanadoo.fr</p>
+                    <p class="footer__text">06 74 45 08 28</p>
+                </div>
+                <div class="footer__horaires">
+                    <h2 class="footer__title">Nos horaires</h2>
+                    <p class="footer__text">Du lundi au samedi</p>
+                    <p class="footer__text">9h - 12h / 14h - 19h</p>
+                </div>
+                <div class="footer__social">
+                    <h2 class="footer__title">Nos réseaux</h2>
+                    <div class="footer__iconLinks">
+                        <a class="footer__iconLink" href="">
+                            <img class="footer__icon" src="assets/icon/Facebook-wh.svg" alt="Icon Facebook">
+                        </a>
+                        <a class="footer__iconLink" href="">
+                            <img class="footer__icon" src="assets/icon/Instagram-wh.svg" alt="Icon Instagram">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__utilities">
+                <a href="">
+                    <img class="footer__logo" src="assets/logo/CPSA-clr.svg" alt="Logo">
+                </a>
+                <div class="footer__utilsLink">
+                    <p class="footer__text">Mentions légales</p>
+                    <p class="footer__text">Politique de confidentialité</p>
+                    <p class="footer__text">Cookies</p>
+                    <p class="footer__text">&copy; CPSA28 2025</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <ul class="list-unstyled menu__list menu__list--canva">
+            <li class="menu__item"><a class="menu__link" href="catalogue.html">Véhicules</a></li>
+            <li class="menu__item"><a class="menu__link" href="">Services</a></li>
+            <li class="menu__item"><a class="menu__link" href="">Contact</a></li>
+        </ul>
+        <div>
+            <ul class="list-unstyled menu__social menu__social--canva" aria-label="Social media">
+                <li>
+                    <a class="menu__iconLink" href=""><img src="assets/icon/Facebook-wh.svg" alt="Icon Facebook"></a>
+                </li>
+                <li>
+                    <a class="menu__iconLink" href=""><img src="assets/icon/Instagram-wh.svg" alt="Icon Instagram"></a>
+                </li>
+                <li>
+                    <a class="menu__iconLink" href=""><img src="assets/icon/profile-wh.svg" alt="Icon Contact"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="src/js/custom-select.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+        integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+</body>
+
+</html>
