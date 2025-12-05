@@ -32,6 +32,7 @@
     cursor: pointer;
     opacity: 0.6;
     transition: opacity 0.2s ease;
+    border: 2px solid transparent;
 }
 
 .carousel__nav-item:hover {
@@ -40,7 +41,7 @@
 
 .carousel__nav-item.active {
     opacity: 1;
-    outline: 2px solid var(--primary);
+    border: 2px solid var(--primary);
 }
 
 .carousel__image {

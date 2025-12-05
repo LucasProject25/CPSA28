@@ -1,12 +1,24 @@
-const nav = document.querySelector(".menu");
-const toggle = document.querySelector(".menu-btn");
-const page = document.body;
+// Sélectionne les éléments du slider
+        const items = document.querySelectorAll('.carousel__item--detail__vehicule');
+        const navItems = document.querySelectorAll('.carousel__nav-item');
 
-toggle.addEventListener("click", () => {
-    const isOpen = toggle.ariaExpanded === "true";
-    const isClosed = !isOpen;
+        // Fonction pour activer une image
+        function setActiveSlide(index) {
+            // Reset : enlève les classes actives
+            items.forEach(item => item.classList.remove('active'));
+            navItems.forEach(nav => nav.classList.remove('active'));
 
-    toggle.ariaExpanded = isClosed;
-    nav.ariaHidden = isOpen;
-    page.classList.toggle("noscroll", isClosed);
-});
+            // Ajoute la classe active sur le bon élément
+            items[index].classList.add('active');
+            navItems[index].classList.add('active');
+        }
+
+        // Ajoute les événements sur chaque miniature
+        navItems.forEach((nav, index) => {
+            nav.addEventListener('click', () => {
+                setActiveSlide(index);
+            });
+        });
+
+        // Active la première image au chargement
+        setActiveSlide(0);

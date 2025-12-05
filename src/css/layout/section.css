@@ -2,7 +2,7 @@
     background: var(--gray-800);
     color: var(--white);
     margin-top: 50px;
-    height: 445px;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -76,6 +76,7 @@
     background-size: cover;
     overflow: hidden;
     position: relative; /* needed for overlay */
+    height: 445px;
     
 }
 
@@ -108,6 +109,19 @@
     height: 2px;
     margin: 10px auto 0; /* top, horizontal auto to center, bottom */
     background-color: var(--black);
+}
+
+.section--club {
+    height: 445px;
+    padding-bottom: 30px;
+}
+
+.section--detail__vehicule {
+    margin-bottom: 100px;
+}
+
+.section--equip-option {
+    margin-bottom: 200px;
 }
 
 @media (min-width: 0) and (max-width: 768px) {

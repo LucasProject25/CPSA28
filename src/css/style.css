@@ -12,6 +12,7 @@
 @import "layout/header.css";
 @import "layout/footer.css";
 @import "layout/section.css";
+@import "layout/infos-generales.css";
 
 /* 5. Les librairies tierces */
 @import "lib/slick.css";
@@ -24,4 +25,6 @@
 @import "components/filtre.css";
 @import "components/carousel.css";
 @import "components/catalogue.css";
+@import "components/option-buttons.css";
+@import "components/modal.css";
 
