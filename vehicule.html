@@ -56,21 +56,57 @@
                 </div>
             </header>
             <div class="carousel">
-                <div class="container diaporama">
+                <div class="container diaporama" style="margin-bottom: 20px;">
                     <div>
-                        <div class="carousel__item">
-                            <img class="carousel__image" src="assets/img/Porsche_Cayman.png" alt="Ferrari Spider">
+                        <div class="carousel__item carousel__item--detail__vehicule">
+                            <img class="carousel__image carousel__image--detail__vehicule" src="assets/img/Porsche_Cayman.png" alt="Ferrari Spider">
                         </div>
                     </div>
                     <div>
-                        <div class="carousel__item">
-                            <img class="carousel__image" src="assets/img/Porsche_Cayman.png" alt="Ferrari Spider">
+                        <div class="carousel__item carousel__item--detail__vehicule">
+                            <img class="carousel__image carousel__image--detail__vehicule" src="assets/img/porsche-cayman-arrière.png" alt="Ferrari Spider">
                         </div>
                     </div>
                     <div>
-                        <div class="carousel__item">
-                            <img class="carousel__image" src="assets/img/Porsche_Cayman.png" alt="Ferrari Spider">
+                        <div class="carousel__item carousel__item--detail__vehicule">
+                            <img class="carousel__image carousel__image--detail__vehicule" src="assets/img/porsche-cayman-coté.png" alt="Ferrari Spider">
                         </div>
+                    </div>
+                    <div>
+                        <div class="carousel__item carousel__item--detail__vehicule">
+                            <img class="carousel__image carousel__image--detail__vehicule" src="assets/img/porsche-cayman-interieur.png" alt="Ferrari Spider">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="carousel__item carousel__item--detail__vehicule">
+                            <img class="carousel__image carousel__image--detail__vehicule" src="assets/img/porsche-cayman-ecran.png" alt="Ferrari Spider">
+                        </div>
+                    </div>
+                </div>
+                <div class="container nav">
+                    <div>
+                        <div class="carousel__nav-item">
+                            <img class="carousel__nav-image" src="assets/img/Porsche_Cayman.png" alt="Ferrari Spider">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="carousel__nav-item">
+                            <img class="carousel__nav-image" src="assets/img/porsche-cayman-arrière.png" alt="Ferrari Spider">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="carousel__nav-item">
+                            <img class="carousel__nav-image" src="assets/img/porsche-cayman-coté.png" alt="Ferrari Spider">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="carousel__nav-item">
+                            <img class="carousel__nav-image" src="assets/img/porsche-cayman-interieur.png" alt="Ferrari Spider">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="carousel__nav-item">
+                            <img class="carousel__nav-image" src="assets/img/porsche-cayman-ecran.png" alt="Ferrari Spider">
                         </div>
                     </div>
                 </div>
@@ -143,11 +179,30 @@
         integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script>
-        $('.diaporama').slick({
-            infinite: true,
-            slidesToShow: 1,
-            slidesToScroll: 1
+        // Sélectionne les éléments du slider
+        const items = document.querySelectorAll('.carousel__item--detail__vehicule');
+        const navItems = document.querySelectorAll('.carousel__nav-item');
+
+        // Fonction pour activer une image
+        function setActiveSlide(index) {
+            // Reset : enlève les classes actives
+            items.forEach(item => item.classList.remove('active'));
+            navItems.forEach(nav => nav.classList.remove('active'));
+
+            // Ajoute la classe active sur le bon élément
+            items[index].classList.add('active');
+            navItems[index].classList.add('active');
+        }
+
+        // Ajoute les événements sur chaque miniature
+        navItems.forEach((nav, index) => {
+            nav.addEventListener('click', () => {
+                setActiveSlide(index);
+            });
         });
+
+        // Active la première image au chargement
+        setActiveSlide(0);
     </script>
 </body>
 

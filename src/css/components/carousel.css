@@ -3,6 +3,14 @@
     margin: 50px 0;
 }
 
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+}
+
 .carousel__item {
     display: flex;
     flex-direction: row;
@@ -11,9 +19,43 @@
     gap: 100px;
 }
 
+.carousel__item--detail__vehicule {
+    display: none;
+    transition: opacity 0.3s ease;
+}
+
+.carousel__item--detail__vehicule.active {
+    display: block;
+}
+
+.carousel__nav-item {
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.2s ease;
+}
+
+.carousel__nav-item:hover {
+    border: 2px solid var(--primary);
+}
+
+.carousel__nav-item.active {
+    opacity: 1;
+    outline: 2px solid var(--primary);
+}
+
 .carousel__image {
     width: 435px;
     height: 305px;
+}
+
+.carousel__image--detail__vehicule {
+    width: 980px;
+    height: auto;
+}
+
+.carousel__nav-image {
+    width: 180px;
+    height: 115px;
 }
 
 .carousel__titre {
