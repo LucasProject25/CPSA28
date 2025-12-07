@@ -197,41 +197,177 @@
             </header>
             <div class="container option-buttons">
                 <div class="option-buttons__first-column">
-                    <div class="option-buttons__btn option-buttons__btn--mecanique" id="btn">
-                        <h2 class="option-buttons__intitule">Mécaniques Performances</h2>
+                    <div class="option-buttons__btn option-buttons__btn--mecanique" data-modal="modal-meca">
+                        <h2 class="option-buttons__intitule">Mécanique Performances</h2>
                     </div>
-                    <div id="modal" class="option-buttons__modal modal">
+                    <div id="modal-meca" class="option-buttons__modal modal">
                         <div class="modal__content">
-                            <span class="close">&times;</span>
-                            <p class="modal__text">Échappement sport</p>
-                            <p class="modal__text">Échappement sport</p>
-                            <p class="modal__text">Échappement sport</p>
+                            <div class="close">
+                                <i class="bi bi-x-lg"></i>
+                            </div>
+                            <div class="modal__container-title">
+                                <i class="bi bi-gear-fill"></i>
+                                <h2 class="modal__title">Mécanique & Performances</h2>
+                            </div>
+                            <div class="modal__container-text">
+                                <p class="modal__text">Échappement sport PSE avec sortie noire</p>
+                                <p class="modal__text">Suspension pilotée PASM</p>
+                                <p class="modal__text">PADM (Dynamic Engine Mounts)</p>
+                                <p class="modal__text">Pack Sport Chrono Plus (avec LAPTRIGGER)</p>
+                                <p class="modal__text">PSM (Porsche Stability Management)</p>
+                                <p class="modal__text">Frein de parking automatique</p>
+                                <p class="modal__text">Étriers de freins rouges</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="option-buttons__btn option-buttons__btn--exterieur">
+                    <div class="option-buttons__btn option-buttons__btn--exterieur" data-modal="modal-ext">
                         <h2 class="option-buttons__intitule">Extérieur</h2>
                     </div>
-                    <div class="option-buttons__btn option-buttons__btn--interieur">
+                    <div id="modal-ext" class="option-buttons__modal modal">
+                        <div class="modal__content">
+                            <div class="close">
+                                <i class="bi bi-x-lg"></i>
+                            </div>
+                            <div class="modal__container-title">
+                                <i class="bi bi-car-front-fill"></i>
+                                <h2 class="modal__title">Extérieur</h2>
+                            </div>
+                            <div class="modal__container-text">
+                                <p class="modal__text">Jantes alu 20" anthracites</p>
+                                <p class="modal__text">Rétroviseurs extérieurs réglage électrique</p>
+                                <p class="modal__text">Phares directionnels et Xénon PDLS</p>
+                                <p class="modal__text">Phares à allumage automatique</p>
+                                <p class="modal__text">Lave-phares</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="option-buttons__btn option-buttons__btn--interieur" data-modal="modal-int">
                         <h2 class="option-buttons__intitule">Intérieur Finition</h2>
+                    </div>
+                    <div id="modal-int" class="option-buttons__modal modal">
+                        <div class="modal__content">
+                            <div class="close">
+                                <i class="bi bi-x-lg"></i>
+                            </div>
+                            <div class="modal__container-title">
+                                <i class="bi bi-palette-fill"></i>
+                                <h2 class="modal__title">Intérieur & Finition</h2>
+                            </div>
+                            <div class="modal__container-text">
+                                <p class="modal__text">Sièges Sport Plus alcantara électrique</p>
+                                <p class="modal__text">Volant suède 3 branches</p>
+                                <p class="modal__text">Levier de vitesse alcantara</p>
+                                <p class="modal__text">Ciel de pavillon alcantara</p>
+                                <p class="modal__text">Accoudoir central avant</p>
+                                <p class="modal__text">Éléments décoratifs intérieurs carbone</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="option-buttons__second-column">
-                    <div class="option-buttons__btn option-buttons__btn--protection">
+                    <div class="option-buttons__btn option-buttons__btn--protection" data-modal="modal-protec">
                         <h2 class="option-buttons__intitule">Protection Antivol</h2>
                     </div>
-                    <div class="option-buttons__btn option-buttons__btn--document">
+                    <div id="modal-protec" class="option-buttons__modal modal">
+                        <div class="modal__content">
+                            <div class="close">
+                                <i class="bi bi-x-lg"></i>
+                            </div>
+                            <div class="modal__container-title">
+                                <i class="bi bi-lock-fill"></i>
+                                <h2 class="modal__title">Protection & Antivol</h2>
+                            </div>
+                            <div class="modal__container-text">
+                                <p class="modal__text">Alarme et antivol</p>
+                                <p class="modal__text">Kit anticrevaison</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="option-buttons__btn option-buttons__btn--document" data-modal="modal-doc">
                         <h2 class="option-buttons__intitule">Documents Garantie</h2>
+                    </div>
+                    <div id="modal-doc" class="option-buttons__modal modal">
+                        <div class="modal__content">
+                            <div class="close">
+                                <i class="bi bi-x-lg"></i>
+                            </div>
+                            <div class="modal__container-title">
+                                <i class="bi bi-file-earmark-text-fill"></i>
+                                <h2 class="modal__title">Documents & Garantie</h2>
+                            </div>
+                            <div class="modal__container-text">
+                                <p class="modal__text">Carnet d’entretien</p>
+                                <p class="modal__text">Factures d’entretien disponibles</p>
+                                <p class="modal__text">Garantie 12 mois</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="option-buttons__third-column">
-                    <div class="option-buttons__btn option-buttons__btn--confort">
+                    <div class="option-buttons__btn option-buttons__btn--confort" data-modal="modal-conf">
                         <h2 class="option-buttons__intitule">Confort Technologie</h2>
                     </div>
-                    <div class="option-buttons__btn option-buttons__btn--audio">
+                    <div id="modal-conf" class="option-buttons__modal modal">
+                        <div class="modal__content">
+                            <div class="close">
+                                <i class="bi bi-x-lg"></i>
+                            </div>
+                            <div class="modal__container-title">
+                                <i class="bi bi-lightbulb-fill"></i>
+                                <h2 class="modal__title">Confort & Technologie</h2>
+                            </div>
+                            <div class="modal__container-text">
+                                <p class="modal__text">Climatisation automatique</p>
+                                <p class="modal__text">Ouverture du coffre à distance</p>
+                                <p class="modal__text">Bluetooth</p>
+                                <p class="modal__text">Ordinateur de bord</p>
+                                <p class="modal__text">Écran tactile multifonctions 7 pouces</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="option-buttons__btn option-buttons__btn--audio" data-modal="modal-aud">
                         <h2 class="option-buttons__intitule">Audio Multimédia</h2>
                     </div>
-                    <div class="option-buttons__btn option-buttons__btn--securite">
+                    <div id="modal-aud" class="option-buttons__modal modal">
+                        <div class="modal__content">
+                            <div class="close">
+                                <i class="bi bi-x-lg"></i>
+                            </div>
+                            <div class="modal__container-title">
+                                <i class="bi bi-volume-up-fill"></i>
+                                <h2 class="modal__title">Audio & Multimédia</h2>
+                            </div>
+                            <div class="modal__container-text">
+                                <p class="modal__text">Système audio ASK avec écran tactile</p>
+                                <p class="modal__text">Lecteur CD et MP3</p>
+                                <p class="modal__text">4 haut-parleurs</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="option-buttons__btn option-buttons__btn--securite" data-modal="modal-secu">
                         <h2 class="option-buttons__intitule">Sécurité</h2>
+                    </div>
+                    <div id="modal-secu" class="option-buttons__modal modal">
+                        <div class="modal__content">
+                            <div class="close">
+                                <i class="bi bi-x-lg"></i>
+                            </div>
+                            <div class="modal__container-title">
+                                <i class="bi bi-shield-fill"></i>
+                                <h2 class="modal__title">Sécurité</h2>
+                            </div>
+                            <div class="modal__container-text">
+                                <p class="modal__text">6 airbags dont airbags latéraux</p>
+                                <p class="modal__text">ESP et antipatinage</p>
+                                <p class="modal__text">ABS</p>
+                                <p class="modal__text">Assistance au freinage d’urgence</p>
+                                <p class="modal__text">Aide au démarrage en côte</p>
+                                <p class="modal__text">Contrôle et indicateur de pression des pneus</p>
+                                <p class="modal__text">Détecteur de pluie</p>
+                                <p class="modal__text">Essuie-glaces automatiques</p>
+                                <p class="modal__text">Feux automatiques</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -303,33 +439,6 @@
         integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="src/js/script.js"></script>
-    <script>
-        // Get the modal
-        var modal = document.getElementById("modal");
-
-        // Get the button that opens the modal
-        var btn = document.getElementById("btn");
-
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-
-        // When the user clicks the button, open the modal 
-        btn.onclick = function () {
-            modal.style.display = "block";
-        }
-
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function () {
-            modal.style.display = "none";
-        }
-
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function (event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-    </script>
 </body>
 
 </html>

@@ -1,10 +1,9 @@
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
+  z-index: 1;
+  left: 40%;
+  top: 10%;
   width: 430px; /* Full width */
   height: 715px; /* Full height */
   overflow: auto; /* Enable scroll if needed */
@@ -12,25 +11,58 @@
 }
 
 /* Modal Content */
-.modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
+.modal__content {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
 }
 
-/* The Close Button */
 .close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+  width: 35px;
 }
 
 .close:hover,
 .close:focus {
-  color: #000;
+  color: var(--secondary);
   text-decoration: none;
   cursor: pointer;
+}
+
+.modal__container-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.bi-gear-fill,
+.bi-car-front-fill,
+.bi-palette-fill,
+.bi-lock-fill,
+.bi-file-earmark-text-fill,
+.bi-lightbulb-fill,
+.bi-volume-up-fill,
+.bi-shield-fill {
+  display: block;
+  color: var(--primary);
+}
+
+.modal__title {
+  color: var(--primary);
+  margin-bottom: 50px;
+}
+
+.modal__container-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 50px;
+}
+
+.modal__text {
+  margin: 0;
+}
+
+.bi-x-lg {
+  display: block;
+  font-size: 35px;
+  float: right;
 }
