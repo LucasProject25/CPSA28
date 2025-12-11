@@ -141,14 +141,6 @@
         width: 300px;
         height: auto;
     }
-
-    .infos-generales__label {
-        display: none;
-    }
-
-    .infos-generales__line-item--end {
-        justify-content: end;
-    }
 }
 
 @media (min-width: 769px) and (max-width: 1179px) {
@@ -177,5 +169,15 @@
 
     .slick-next {
         right: 45px;
+    }
+
+    .carousel__nav-image {
+        width: 100px;
+        height: auto;
+    }
+
+    .carousel__image--detail__vehicule {
+        width: 400px;
+        height: auto;
     }
 }

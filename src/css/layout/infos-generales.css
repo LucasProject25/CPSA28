@@ -82,3 +82,33 @@
     margin: 10px auto 0;
     background-color: var(--primary);
 }
+
+@media (min-width: 0) and (max-width: 768px) {
+    .infos-generales {
+        width: auto;
+        gap: 30px;
+    }
+
+    .infos-generales__label {
+        display: none;
+    }
+
+    .infos-generales__line-item--end {
+        justify-content: end;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1179px) {
+    .infos-generales {
+        width: 80%;
+        gap: 30px;
+    }
+    
+    .infos-generales__label {
+        display: none;
+    }
+
+    .infos-generales__line-item--end {
+        justify-content: end;
+    }
+}

@@ -135,6 +135,10 @@
         height: auto;
     }
 
+    .section__header--vehicule {
+        width: auto;
+    }
+
     .section--filtre {
         height: auto;
     }
@@ -151,6 +155,10 @@
         margin-bottom: 60px;
     }
 
+    .section--equip-option {
+        margin-bottom: 50px;
+    }
+
     .section__title {
         font-size: var(--fs-sub-heading);
         width: auto;
@@ -158,6 +166,10 @@
 
     .section__title::after {
         width: 125px;
+    }
+
+    .section__btn {
+        justify-content: center;
     }
 
     .section__paragraph {
@@ -189,6 +201,10 @@
         height: auto;
     }
 
+    .section__header--vehicule {
+        width: auto;
+    }
+
     .section--filtre {
         height: auto;
     }
@@ -201,6 +217,10 @@
         padding-bottom: 30px;
     }
 
+    .section--equip-option {
+        margin-bottom: 50px;
+    }
+
     .section__title {
         font-size: var(--fs-sub-heading);
         width: auto;
@@ -208,6 +228,10 @@
 
     .section__title::after {
         width: 125px;
+    }
+
+    .section__btn {
+        justify-content: center;
     }
 
     .section__paragraph {
