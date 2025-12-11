@@ -8,11 +8,11 @@
 @import "base/main.css";
 
 /* 4. Les éléments de mise en page généraux */
-@import "layout/body.css";
 @import "layout/header.css";
 @import "layout/footer.css";
 @import "layout/section.css";
 @import "layout/infos-generales.css";
+@import "layout/services-list.css";
 
 /* 5. Les librairies tierces */
 @import "lib/slick.css";

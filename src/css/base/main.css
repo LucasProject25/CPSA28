@@ -4,9 +4,14 @@
 }
 
 body {
+    background: var(--gray-800);
     overflow-x: hidden;
     font-family: var(--font-sans-serif);
     font-size: var(--fs-paragraph);
+}
+
+.body--home {
+    background: var(--white);
 }
 
 img {
