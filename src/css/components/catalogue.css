@@ -85,7 +85,7 @@ img.catalogue__img {
     .catalogue__item {
         flex-direction: column;
         gap: 20px;
-}
+    }
 
     img.catalogue__img {
         width: 395px;
@@ -106,5 +106,23 @@ img.catalogue__img {
 
 
 @media (min-width: 769px) and (max-width: 1179px) {
+    .catalogue__item {
+        gap: 20px;
+    }
+    
+    img.catalogue__img {
+        width: 495px;
+        height: auto;
+        object-fit: contain;
+        display: block;
+    }
 
+    .catalogue__logo {
+        width: 85px;
+        height: auto;
+    }
+
+    .catalogue__title {
+        font-size: var(--fs-paragraph-bis);
+    }
 }
