@@ -243,6 +243,11 @@
         justify-content: center;
     }
 
+    .section__btn--service {
+        flex-direction: column;
+        gap: 15px;
+    }
+
     .section__paragraph {
         gap: 23px;
         margin: 10px;
@@ -265,6 +270,31 @@
         font-size: var(--fs-paragraph-bis);
         line-height: 25px;
     }
+    
+    .section__chapo {
+        font-size: var(--fs-paragraph-bis);
+    }
+
+    .section__texte--garantie {
+        font-size: var(--fs-paragraph);
+    }
+
+    .section__container-text {
+        flex-direction: column;
+        gap: 30px;
+        margin: 20px 0 20px 0;
+    }
+
+    .section__container-text__first, 
+    .section__container-text__second {
+        width: 100%;
+        gap: 10px;
+    }
+
+    .section--partners__logos {
+        flex-direction: column;
+    }
+
 }
 
 @media (min-width: 769px) and (max-width: 1179px) {
@@ -327,5 +357,36 @@
         font-size: var(--fs-paragraph-bis);
         line-height: 25px;
     }
+
+    .section__chapo {
+        font-size: var(--fs-paragraph-bis);
+    }
+
+
+    .section__paragraph--garantie {
+        gap: 40px;
+    }
+
+    .section__texte--garantie {
+        font-size: var(--fs-paragraph-bis);
+    }
+
+    
+
+    .section__container-text {
+        flex-direction: column;
+        gap: 50px;
+        margin: 20px 0 20px 0;
+    }
+
+    .section__btn--service {
+        justify-content: space-evenly;
+    }
+
+    .section__container-text__first,
+    .section__container-text__second {
+        gap: 20px;
+    }
+    
 }
 
