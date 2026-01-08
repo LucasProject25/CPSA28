@@ -201,6 +201,38 @@
     margin-top: 70px;
 }
 
+.section--contact {
+    margin-bottom: 185px;
+}
+
+.section--situer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section__coordonnees {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    text-align: left;
+}
+
+.section__nameCompany {
+    font-family: var(--font-sans-serif-bold);
+    font-size: var(--fs-sub-heading);
+}
+
+.section__texte {
+    font-size: var(--fs-paragraph-bis);
+}
+
+.section__texte--telephone {
+    font-family: var(--font-sans-serif-semiBold);
+    color: var(--primary);
+}
+
 @media (min-width: 0) and (max-width: 768px) {
     .section {
         height: auto;
