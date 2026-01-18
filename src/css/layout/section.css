@@ -210,6 +210,11 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 187px;
+}
+
+.section--formulaire__contact {
+    margin-bottom: 125px;
 }
 
 .section__coordonnees {

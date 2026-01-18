@@ -23,8 +23,21 @@
     font-size: var(--fs-sub-heading);
 }
 
+.myBtn--contact {
+    background: transparent;
+    border: 3px solid var(--white);
+    color: var(--white);
+}
+
 .myBtn:hover {
     background-color: var(--secondary);
+    color: var(--white);
+    transition: all 0.3s ease;
+}
+
+.myBtn--contact:hover {
+    background-color: var(--secondary);
+    border: 3px solid var(--secondary);
     color: var(--white);
     transition: all 0.3s ease;
 }
